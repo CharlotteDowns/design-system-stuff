@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Design System Prototyping using GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        GOV.UK Design System
+        <span class="govuk-caption-xl">Prototyping pages</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        This collection of pages are being used to prototype components, styles and patterns within the GOV.UK Design System. 
+      </p>
+
+      <p>
+         Ideas within these pages have not undergone testing with end-users and are therefore not advised to be used in production environments. 
+      </p>
+
+
+
+      <h2 class="govuk-heading-m">Examples</h2>
+        
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="accordion">Accordion</a></li>
+        <li><a href="email-prefs">Email preferences</a></li>
+      </ul>
+
+      
+    </div>
+  </div>
+
+{% endblock %}

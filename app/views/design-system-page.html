@@ -1,0 +1,134 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+About - GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+<header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container app-width-container app-header__container">
+    <div class="govuk-header__logo app-header__logo">
+      <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+          <svg aria-hidden="true" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 97" height="30" width="36">
+            <path fill="currentColor" fill-rule="evenodd" d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"></path>
+            <image src="/assets/images/govuk-logotype-crown.png" xlink:href="" class="govuk-header__logotype-crown-fallback-image" width="36" height="32"></image>
+          </svg>
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
+        </span>
+        <span class="govuk-header__product-name">
+          Design System
+        </span>
+      </a>
+    </div>
+    <div class="app-site-search" data-module="app-search" data-search-index="/search-index-ba133e98a4bcec6e9c728af78190a83e.json">
+      <label class="govuk-visually-hidden" for="app-site-search__input">Search Design system</label>
+      <a class="app-site-search__link govuk-link" href="/sitemap">Sitemap</a>
+    <div class="app-site-search__wrapper"><div style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 1px;"><div id="app-site-search__input__status--A" role="status" aria-atomic="true" aria-live="polite"></div><div id="app-site-search__input__status--B" role="status" aria-atomic="true" aria-live="polite"></div></div><input aria-expanded="false" aria-owns="app-site-search__input__listbox" aria-autocomplete="both" aria-describedby="app-site-search__input__assistiveHint" autocomplete="off" class="app-site-search__input app-site-search__input--default" id="app-site-search__input" name="input-autocomplete" placeholder="Search Design System" type="text" role="combobox"><ul class="app-site-search__menu app-site-search__menu--overlay app-site-search__menu--hidden" id="app-site-search__input__listbox" role="listbox"></ul><span id="app-site-search__input__assistiveHint" style="display: none;">When autocomplete results are available use up and down arrows to review and enter to select.  Touch device users, explore by touch or with swipe gestures.</span></div></div>
+    <div class="app-header-mobile-nav-toggler-wrapper">
+      <button id="app-mobile-nav-toggler" class="govuk-button app-header-mobile-nav-toggler js-app-mobile-nav-toggler" aria-controls="app-mobile-nav" aria-expanded="false">
+        Menu
+      </button>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{% block beforeContent %}
+	{{ govukBreadcrumbs({
+	  items: [
+	    {
+	      text: "GOV.UK Prototype Kit",
+	      href: "/docs"
+	    }
+	  ]
+	}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">About</h1>
+
+      <p class="govuk-body-l">
+        The GOV.UK Prototype Kit provides a simple way to make interactive prototypes that look like pages on GOV.UK. These prototypes can be used to show ideas to people you work with, and to do user research
+      </p>
+      
+      <h2 class="govuk-heading-m">Support</h2>
+      
+      <p>The GOV.UK Prototype Kit is maintained by the Government Digital Service. If you’ve got a question or need support you can:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>email 
+          <a href="mailto:govuk-design-system-support@digital.cabinet-office.gov.uk" class="govuk-link">
+            govuk-design-system-support@digital.cabinet-office.gov.uk
+          </a>
+        </li>
+        <li>
+          <a href="https://ukgovernmentdigital.slack.com/messages/prototype-kit" class="govuk-link">
+            get in touch on Slack
+          </a> 
+          (<a class="govuk-link" href="slack://channel?team=T04V6EBTR&amp;id=C0647LW4R">open in app</a>)
+        </li>
+        <li>
+          <a href="https://github.com/alphagov/govuk-prototype-kit/issues" class="govuk-link">
+            view known issues on GitHub
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Contributing</h2>
+      
+      <p>If you’ve got an idea or suggestion you can:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="https://ukgovernmentdigital.slack.com/messages/prototype-kit-dev" class="govuk-link">
+            get in touch on the developer Slack channel
+          </a> 
+          (<a class="govuk-link" href="slack://channel?team=T04V6EBTR&amp;id=C0E1063DW">open in app</a>)
+        </li>
+        <li>
+          <a href="https://github.com/alphagov/govuk-prototype-kit/issues" class="govuk-link">
+            create a GitHub issue
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Principles</h2>
+
+      <p>The GOV.UK Prototype Kit:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>is designed for prototyping, not for production code</li>
+        <li>requires minimal skills to get started: HTML, CSS</li>
+        <li>should be fully documented in a way that is accessible to the target audience</li>
+        <li>
+          makes use of <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Frontend</a>
+        </li>
+        <li>allows for server-side code</li>
+        <li>can be extended - for example using NPM to install a module, access datastores, etc</li>
+        <li>makes it easy to share prototypes with others online</li>
+
+      </ul>
+
+
+      <h2 class="govuk-heading-m">Privacy</h2>
+
+
+      <p>You must protect user privacy at all times, even when using prototypes. Prototypes made with the kit look like GOV.UK, but do not have the same security provisions. Always make sure you are handling user data appropriately.</p>
+
+
+
+      <h2 class="govuk-heading-m">The kit is not a production framework</h2>
+
+      <p>Things made with the kit may look like GOV.UK, but do not have production code and likely aren't fully accessible. Don't use the kit as a base for a production service.</p>
+
+    </div>
+
+
+  </div>
+
+
+
+{% endblock %}

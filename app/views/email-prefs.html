@@ -1,0 +1,159 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Email preferences
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="/" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+      <h1 class="govuk-heading-l">
+        What do you want to get alerts about?
+      </h1>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <aside class="" role="complementary">
+        <p class="govuk-body-l">
+          Everything published to GOV.UK about UK help and services in Switzerland. This will include alerts about all the topics below.
+        </p>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <div class="govuk-radios govuk-radios--inline">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Select all alert topics</strong>
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+        <div class="app-related-items" style="padding-top: 30px;">
+          <p class="govuk-body-l">
+            or only one of the following 11 sub-topics
+          </p>
+          <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Living in Switzerland</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: Guidance on your rights after the UK's ecit from the EU, accessing healthcare, getting a document legalised, English-speaking lawyers, how to vote abroad.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Birth, death and marriage abroad</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: Guidance on how to get married, list of funeral directors and how to register a birth abroad.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Tax, benefits, pensions and working abroad</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: How to pay tax, claim State Pension and get tax credits abroad.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>British embassy or high commission</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: contact details, opening hours, consular fees and local services.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Tax, benefits, pensions and working abroad</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: How to pay tax, claim State Pension and get tax credits abroad.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Tax, benefits, pensions and working abroad</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: How to pay tax, claim State Pension and get tax credits abroad.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Tax, benefits, pensions and working abroad</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: How to pay tax, claim State Pension and get tax credits abroad.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Tax, benefits, pensions and working abroad</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: How to pay tax, claim State Pension and get tax credits abroad.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Tax, benefits, pensions and working abroad</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: How to pay tax, claim State Pension and get tax credits abroad.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Tax, benefits, pensions and working abroad</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: How to pay tax, claim State Pension and get tax credits abroad.
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="changed-name">
+                  <strong>Tax, benefits, pensions and working abroad</strong>
+                </label>
+                <div id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  This will include: How to pay tax, claim State Pension and get tax credits abroad.
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+{% endblock %}

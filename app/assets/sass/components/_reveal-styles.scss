@@ -1,0 +1,78 @@
+.js-enabled .accordion-v1 .govuk-accordion__controls, .js-enabled .accordion-v2 .govuk-accordion__controls {
+    text-align: left;
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__controls button, .js-enabled .accordion-v2 .govuk-accordion__controls button {
+    padding: .5em 0;
+    text-decoration: underline;
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__controls button:focus, .js-enabled .accordion-v2 .govuk-accordion__controls button:focus {
+    text-decoration: none;
+}
+
+.js-enabled .accordion-v2.govuk-accordion {
+    border-bottom: solid 2px #b1b4b6;
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__section:hover:not(:focus) {
+    background-color: #f3f2f1;
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__section-button:hover:not(:focus) {
+    text-decoration: none;
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__section-header {
+    padding-left: 60px;
+    padding-right: 0px;
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__icon {
+    right: auto;
+    left: 8px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__icon:before {
+    display: none;  
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__icon:after, .js-enabled .accordion-v1 .govuk-accordion__icon:before {
+    background-color: transparent;
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__icon:after {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #0b0c0c;
+	border-width: 0 2px 2px 0;
+    margin-top: -4px;
+    margin-left: -4px;
+}
+
+.js-enabled .accordion-v1 .govuk-accordion__section--expanded .govuk-accordion__icon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #0b0c0c;
+	border-width: 2px 0 0 2px;
+    margin-bottom: -2px;
+    margin-right: -2px;
+}
+
+
+
+
