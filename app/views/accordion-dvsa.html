@@ -10,24 +10,24 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="/">Prototyping pages</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Accordion</a>
-      </li>
-    </ol>
-  </div>
+    <div>
+        <a class="govuk-back-link" href="/">Back</a>
+    </div>
 {% endblock %}
 
 {% block content %}
-    <h1 class="govuk-heading-l">Accordion Component</h1>
+    
+    <h1 class="govuk-heading-xl"><span class="govuk-caption-xl">WV05UXY </span>MINI
+    </h1>
+
+    <p>
+        <a href="/" id="checkAnotherVehicle">Check another
+        vehicle</a>
+    </p>
 
     <!-- CURRENT EXAMPLE -->
 
-    <span class="govuk-caption-l">As-is example</span>
+    <span class="govuk-caption-l">Current example</span>
     <div class="govuk-accordion govuk-!-margin-top-4" data-module="govuk-accordion" id="accordion-default">
       <div class="govuk-accordion__section ">
         <div class="govuk-accordion__section-header">
@@ -79,10 +79,7 @@
       </div>
     </div>
 
-
     <!-- PROPOSED EXAMPLES -->
-        
-    <div class="new-examples">
     
     <span class="govuk-caption-l govuk-!-margin-top-8">Proposed examples</span>
     <p class="govuk-!-margin-top-2">Version 1</p>
@@ -138,7 +135,7 @@
     </div>
 
     <p class="govuk-!-margin-top-2">Version 2</p>
-    <div id="step-by-step-navigation" class="app-step-nav app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+    <div id="step-by-step-navigation" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
       <div class="govuk-accordion__section ">
         <div class="app-step-nav__header js-toggle-panel">
           <h2 class="app-step-nav__title">
@@ -191,7 +188,7 @@
 
     <p class="govuk-!-margin-top-2">Version 3</p>
     <div class="govuk-accordion govuk-!-margin-top-4 accordion-v3" data-module="govuk-accordion" id="accordion-default">
-      <div class="govuk-accordion__section" tabindex="0" role="button">
+      <div class="govuk-accordion__section ">
         <div class="govuk-accordion__section-header">
           <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
@@ -203,7 +200,7 @@
           <p class='govuk-body'>This is the content for Writing well for the web.</p>
         </div>
       </div>
-      <div class="govuk-accordion__section" tabindex="0" role="button">
+      <div class="govuk-accordion__section ">
         <div class="govuk-accordion__section-header">
           <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
@@ -215,7 +212,7 @@
           <p class='govuk-body'>This is the content for Writing well for specialists.</p>
         </div>
       </div>
-      <div class="govuk-accordion__section" tabindex="0" role="button">
+      <div class="govuk-accordion__section ">
         <div class="govuk-accordion__section-header">
           <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
@@ -227,7 +224,7 @@
           <p class='govuk-body'>This is the content for Know your audience.</p>
         </div>
       </div>
-      <div class="govuk-accordion__section" tabindex="0" role="button">
+      <div class="govuk-accordion__section ">
         <div class="govuk-accordion__section-header">
           <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
@@ -239,60 +236,6 @@
           <p class='govuk-body'>This is the content for How people read.</p>
         </div>
       </div>
-    </div>
-
-    <p class="govuk-!-margin-top-2">Version 4</p>
-    <div class="govuk-accordion govuk-!-margin-top-4 accordion-v4" data-module="govuk-accordion" id="accordion-default">
-      <div class="govuk-accordion__section" tabindex="0" role="button">
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-              Writing well for the web
-            </span>
-          </h2>
-        </div>
-        <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-          <p class='govuk-body'>This is the content for Writing well for the web.</p>
-        </div>
-      </div>
-      <div class="govuk-accordion__section" tabindex="0" role="button">
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-              Writing well for specialists
-            </span>
-          </h2>
-        </div>
-        <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-          <p class='govuk-body'>This is the content for Writing well for specialists.</p>
-        </div>
-      </div>
-      <div class="govuk-accordion__section" tabindex="0" role="button">
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
-              Know your audience
-            </span>
-          </h2>
-        </div>
-        <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-          <p class='govuk-body'>This is the content for Know your audience.</p>
-        </div>
-      </div>
-      <div class="govuk-accordion__section" tabindex="0" role="button">
-        <div class="govuk-accordion__section-header">
-          <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-              How people read
-            </span>
-          </h2>
-        </div>
-        <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
-          <p class='govuk-body'>This is the content for How people read.</p>
-        </div>
-      </div>
-    </div>
-    
     </div>
 
 {% endblock %}
