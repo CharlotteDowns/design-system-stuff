@@ -49,11 +49,6 @@
     background-color: #f3f2f1;
 }
 
-.js-enabled .accordion-v1 .govuk-accordion__section:focus {
-    background-color: #ffdd00;
-    border-color: #0b0c0c;
-}
-
 .js-enabled .accordion-v3 .govuk-accordion__section-header:hover:not(:focus), .js-enabled .accordion-v4 .govuk-accordion__section-button:hover:not(:focus) {
     color: #1d70b8;
 }
