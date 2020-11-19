@@ -1,0 +1,127 @@
+
+{% extends "layout-full-width.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        The state of things
+      </h1>
+
+
+      {% from "govuk/components/table/macro.njk" import govukTable %}
+
+      {{ govukTable({
+        caption: "Component states",
+        firstCellIsHeader: true,
+        classes: "scrollable",
+        head: [
+          {
+            text: "State"
+          },
+          {
+            text: "Default"
+          },
+          {
+            text: "Hover"
+          },
+          {
+            text: "Active"
+          },
+          {
+            text: "Focus"
+          },
+          {
+            text: "Visited"
+          },
+          {
+            text: "Disabled"
+          },
+          {
+            text: "Selected"
+          },
+          {
+            text: "Unselected"
+          },
+          {
+            text: "Open"
+          },
+          {
+            text: "Closed"
+          }
+        ],
+        rows: [
+          [
+            {
+              text: "Primary button"
+            },
+            {
+              html: govukButton({
+                text: "This is a button"
+              })
+            },
+            {
+              html: govukButton({
+                text: "This is a button"
+              })
+            },
+            {
+              html: govukButton({
+                text: "This is a button"
+              })
+            },
+            {
+              html: govukButton({
+                text: "This is a button"
+              })
+            },
+            {
+              html: govukButton({
+                text: "This is a button"
+              })
+            },
+            {
+              html: govukButton({
+                text: "This is a button",
+                disabled: true
+              })
+            },
+            {
+              html: govukButton({
+                text: "This is a button"
+              })
+            },
+            {
+              html: govukButton({
+                text: "This is a button"
+              })
+            },
+            {
+              html: govukButton({
+                text: "This is a button"
+              })
+            },
+            {
+              html: govukButton({
+                text: "This is a button"
+              })
+            }
+          ],
+          [
+            {
+              text: "Secondary button"
+            }
+          ]
+        ]
+      }) }}
+
+
+    </div>
+  </div>
+
+{% endblock %}

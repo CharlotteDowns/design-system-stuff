@@ -1,0 +1,524 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Buttons and cookies
+      </h1>
+
+
+<p>These are our current primary and secondary button styles...</p>
+
+<p>
+      {{ govukButton({
+        text: "This is a button",
+        classes: "govuk-!-margin-right-1"
+      }) }}
+
+      {{ govukButton({
+        text: "This is a button",
+        classes: "govuk-button--secondary"
+      }) }}
+</p>
+
+<p>But the secondary buttons don't work very well on light grey backgrounds.</p>
+
+<p style="background-color: #f3f2f1; padding: 20px">
+      {{ govukButton({
+        text: "This is a button",
+        classes: "govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+      }) }}
+
+      {{ govukButton({
+        text: "This is a button",
+        classes: "govuk-button--secondary govuk-!-margin-bottom-0"
+      }) }}
+</p>
+
+<p>This has come up a few times, so it would be a good use case to support.</p>
+
+<p>We could create a new, white button...</p>
+
+<p style="background-color: #f3f2f1; padding: 20px">
+      {{ govukButton({
+        text: "This is a button",
+        classes: "govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+      }) }}
+
+      {{ govukButton({
+        text: "This is a button",
+        classes: "govuk-button--white govuk-!-margin-bottom-0"
+      }) }}
+</p>
+
+<p>Which would also be handy for this kind of stuff...</p>
+
+<p style="background-color: #1d70b8; padding: 20px">
+      {{ govukButton({
+        text: "This is a button",
+        classes: "govuk-button--white govuk-!-margin-bottom-0",
+        isStartButton: true
+      }) }}
+</p>
+
+<p>Although the current designs use blue text...</p>
+
+<p style="background-color: #1d70b8; padding: 20px">
+      {{ govukButton({
+        text: "This is a button",
+        classes: "govuk-button--white-on-blue govuk-!-margin-bottom-0",
+        isStartButton: true
+      }) }}
+</p>
+
+<p>Sadly, there doesn't seem to be a simple way for an elements text to inherit the background colour of its parent. Anyone?</p>
+
+<p>Anyway, back to cookies...</p>
+
+<h2 class="govuk-heading-m">Cookie banners and buttons</h2>
+
+<p>The GOV.UK programme is working on a new cookie banner design. It currently looks a bit like this.</p>
+
+<div style="background-color: #f3f2f1; padding: 20px">
+
+  <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+
+  <p>
+    We use cookies to collect information about how you use GOV.UK.
+    We use this information to make the website work as well as possible and improve government services.
+  </p>
+
+      {{ govukButton({
+        text: "Accept all cookies",
+        classes: "govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+      }) }}
+
+      {{ govukButton({
+        text: "Reject all cookies",
+        classes: " govuk-!-margin-bottom-0"
+      }) }}
+
+      <a class="govuk-link buttony-link" href="#">Set cookie preferences</a>
+
+</div>
+
+<br><br>
+
+<p>They would like to differentiate the two buttons more, so that people can more easily distinguish between the positive and negative options.
+
+<p>But, they worry that this treatment is too extreme...</p>
+
+  <div style="background-color: #f3f2f1; padding: 20px">
+
+    <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+
+    <p>
+      We use cookies to collect information about how you use GOV.UK.
+      We use this information to make the website work as well as possible and improve government services.
+    </p>
+
+        {{ govukButton({
+          text: "Accept all cookies",
+          classes: "govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+        }) }}
+
+        {{ govukButton({
+          text: "Reject all cookies",
+          classes: "govuk-button--white  govuk-!-margin-bottom-0"
+        }) }}
+
+        <a class="govuk-link buttony-link" href="#">Set cookie preferences</a>
+
+  </div>
+
+<br><br>
+<p>Instead, they'd like to do something more like this...</p>
+
+  <div style="background-color: #f3f2f1; padding: 20px">
+
+    <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+
+    <p>
+      We use cookies to collect information about how you use GOV.UK.
+      We use this information to make the website work as well as possible and improve government services.
+    </p>
+
+        {{ govukButton({
+          text: "Accept all cookies",
+          classes: "govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+        }) }}
+
+        {{ govukButton({
+          text: "Reject all cookies",
+          classes: "govuk-button--bordered  govuk-!-margin-bottom-0"
+        }) }}
+
+        <a class="govuk-link buttony-link" href="#">Set cookie preferences</a>
+
+  </div>
+
+  <br><br>
+  <p>These buttons also feature in GOV.UK Publisher.
+
+  <p>We considered adding them to the Design System, but there's little evidence that they are needed elsewhere.</p>
+  <p>It's also not clear how they relate to the grey secondary buttons - are they a replacement or an alternative? If they're an alternative, when should they be used?</p>
+
+  <p>The cookie banner will be in the Design System and on every page of GOV.UK, so we don't want to add something without very clear guidance on it's use.
+
+<h2 class="govuk-heading-m">What could we do?</h2>
+
+<p>We could push back and say you have to use a white button on a grey background (or ditch the white background).
+
+  <p style="background-color: #f3f2f1; padding: 20px">
+        {{ govukButton({
+          text: "This is a button",
+          classes: "govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+        }) }}
+
+        {{ govukButton({
+          text: "This is a button",
+          classes: "govuk-button--white govuk-!-margin-bottom-0"
+        }) }}
+  </p>
+
+<br><br>
+<p>We could replace the grey secondary button style with the bordered one.
+
+  <p style="background-color: #f3f2f1; padding: 20px">
+        {{ govukButton({
+          text: "This is a button",
+          classes: "govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+        }) }}
+
+        {{ govukButton({
+          text: "This is a button",
+          classes: "govuk-button--bordered govuk-!-margin-bottom-0"
+        }) }}
+  </p>
+
+<br><br>
+  <p>We could invent a concept of <em>emphasis</em> or <em>inversion</em>, that both primary and secondary buttons can have.</p>
+
+  <p style="padding: 20px">
+          {{ govukButton({
+            text: "This is a button",
+            classes: "govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+          }) }}
+
+          {{ govukButton({
+            text: "This is a button",
+            classes: "govuk-button--bordered govuk-!-margin-bottom-0"
+          }) }}
+    <br><br>
+          {{ govukButton({
+            text: "This is a button",
+            classes: "govuk-button--secondary govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+          }) }}
+
+          {{ govukButton({
+            text: "This is a button",
+            classes: "govuk-button--secondary govuk-button--white-bordered govuk-!-margin-bottom-0"
+          }) }}
+</p>
+<br><br>
+
+<p>Whilst we're at it, we could make those bottom bevels the same thickness...</p>
+
+  <p style="padding: 20px">
+                  {{ govukButton({
+                    text: "This is a button",
+                    classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                  }) }}
+
+                  {{ govukButton({
+                    text: "This is a button",
+                    classes: "govuk-button--bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                  }) }}
+
+                  {{ govukButton({
+                    text: "This is a button",
+                    classes: "same-bevel govuk-button--secondary govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                  }) }}
+                  </p>
+  <p style="background-color: #f3f2f1; padding: 20px">
+    {{ govukButton({
+      text: "This is a button",
+      classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+    }) }}
+
+    {{ govukButton({
+      text: "This is a button",
+      classes: "govuk-button--bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+    }) }}
+
+    {{ govukButton({
+      text: "This is a button",
+      classes: "same-bevel govuk-button--secondary govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+    }) }}
+    </p>
+
+
+    <br><br>
+
+    <p>Hmm, perhaps this IS the white button, but with a border added for contrast...
+
+    <p style="background-color: #f3f2f1; padding: 20px">
+      {{ govukButton({
+        text: "This is a button",
+        classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+      }) }}
+
+      {{ govukButton({
+        text: "This is a button",
+        classes: "govuk-button--white-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+      }) }}
+
+      </p>
+
+
+      <p>It DOES stand out more than the pure white version...
+
+      <p style="background-color: #f3f2f1; padding: 20px">
+        {{ govukButton({
+          text: "This is a button",
+          classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+        }) }}
+
+        {{ govukButton({
+          text: "This is a button",
+          classes: "govuk-button--white-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+        }) }}
+
+        {{ govukButton({
+          text: "This is a button",
+          classes: "govuk-button--white govuk-!-margin-bottom-0"
+        }) }}
+
+        </p>
+
+<p>And you could have a version for blue backgrounds too...
+
+        <p style="background-color: #1d70b8; padding: 20px">
+          {{ govukButton({
+            text: "This is a button",
+            classes: "govuk-button--blue-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+          }) }}
+
+          {{ govukButton({
+            text: "This is a button",
+            classes: "govuk-button--white govuk-!-margin-bottom-0"
+          }) }}
+        </p>
+
+<br><br>
+        <p>Which brings us round to something like this...</p>
+
+          <div style="background-color: #f3f2f1; padding: 20px">
+
+            <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+
+            <p>
+              We use cookies to collect information about how you use GOV.UK.
+              We use this information to make the website work as well as possible and improve government services.
+            </p>
+
+                {{ govukButton({
+                  text: "Accept all cookies",
+                  classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                }) }}
+
+                {{ govukButton({
+                  text: "Reject all cookies",
+                  classes: "govuk-button--white-bordered  govuk-!-margin-bottom-0"
+                }) }}
+
+                <a class="govuk-link buttony-link" href="#">Set cookie preferences</a>
+
+          </div>
+
+<br><br>
+          <p>And this...
+
+          <p style="background-color: #1d70b8; padding: 20px">
+            {{ govukButton({
+              text: "This is a button",
+              classes: "govuk-button--blue-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+            }) }}
+
+          </p>
+
+          <br><br>
+          <p>Woah - what if ALL buttons had borders?...</p>
+
+          <p style=" padding: 0 20px">
+            {{ govukButton({
+              text: "This is a button",
+              classes: "bordered-primary govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+            }) }}
+
+            </p>
+
+          <p style="background-color: #f3f2f1; padding: 20px">
+            {{ govukButton({
+              text: "This is a button",
+              classes: "bordered-primary govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+            }) }}
+
+            </p>
+
+            <p style="background-color: #f3f2f1; padding: 20px">
+
+              {{ govukButton({
+                text: "This is a button",
+                classes: "govuk-button--white-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+              }) }}
+
+              </p>
+
+            <p style="background-color: #1d70b8; padding: 20px">
+              {{ govukButton({
+                text: "This is a button",
+                classes: "govuk-button--blue-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+              }) }}
+
+            </p>
+            <p style="padding: 0 20px">
+              {{ govukButton({
+                text: "This is a button",
+                classes: "govuk-button--grey-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+              }) }}
+
+            </p>
+
+
+          <p>Hmm, the green ones do look a bit grim. Perhaps only the light ones have borders?</p>
+
+            <p style="background-color: #f3f2f1; padding: 20px">
+              {{ govukButton({
+                text: "This is a button",
+                classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+              }) }}
+
+
+                {{ govukButton({
+                  text: "This is a button",
+                  classes: "govuk-button--grey-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                }) }}
+
+              {{ govukButton({
+                text: "This is a button",
+                classes: "govuk-button--white-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+              }) }}
+
+                </p>
+
+                <p style="padding: 0 20px">
+                  {{ govukButton({
+                    text: "This is a button",
+                    classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                  }) }}
+
+
+                    {{ govukButton({
+                      text: "This is a button",
+                      classes: "govuk-button--grey-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                    }) }}
+
+                  {{ govukButton({
+                    text: "This is a button",
+                    classes: "govuk-button--white-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                  }) }}
+
+                    </p>
+
+                    <p style="background-color: #1d70b8; padding: 20px">
+                      {{ govukButton({
+                        text: "This is a button",
+                        classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                      }) }}
+
+
+                        {{ govukButton({
+                          text: "This is a button",
+                          classes: "on-blue govuk-button--grey-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                        }) }}
+
+                      {{ govukButton({
+                        text: "This is a button",
+                        classes: "on-blue govuk-button--white-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                      }) }}
+
+                        </p>
+
+
+                        <p>Nice, although the valid use cases are more like...</p>
+
+                        <p style="background-color: #f3f2f1; padding: 20px">
+                          {{ govukButton({
+                            text: "This is a button",
+                            classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                          }) }}
+
+
+                          {{ govukButton({
+                            text: "This is a button",
+                            classes: "govuk-button--white-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                          }) }}
+
+                            </p>
+
+                            <p style="padding: 0 20px">
+                              {{ govukButton({
+                                text: "This is a button",
+                                classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                              }) }}
+
+
+                                {{ govukButton({
+                                  text: "This is a button",
+                                  classes: "govuk-button--grey-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                                }) }}
+
+                                </p>
+
+                                <p style="background-color: #1d70b8; padding: 20px">
+
+                                  {{ govukButton({
+                                    text: "This is a button",
+                                    classes: "same-bevel govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                                  }) }}
+
+                                  {{ govukButton({
+                                    text: "This is a button",
+                                    classes: "on-blue govuk-button--white-bordered govuk-!-margin-right-1 govuk-!-margin-bottom-0"
+                                  }) }}
+
+                                    </p>
+
+                                    <p style="padding: 0 20px">
+                                          {{ govukButton({
+                                            text: "This is a button",
+                                            classes: "same-bevel govuk-!-margin-bottom-0",
+                                            isStartButton: true
+                                          }) }}
+                                    </p>
+
+                                    <p style="background-color: #1d70b8; padding: 20px">
+                                          {{ govukButton({
+                                            text: "This is a button",
+                                            classes: "on-blue same-bevel govuk-button--white-on-blue govuk-!-margin-bottom-0",
+                                            isStartButton: true
+                                          }) }}
+                                    </p>
+
+    </div>
+  </div>
+
+{% endblock %}

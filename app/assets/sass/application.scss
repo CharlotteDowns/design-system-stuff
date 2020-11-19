@@ -20,3 +20,139 @@ $govuk-assets-path: '/govuk/assets/';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 @import "components/reveal-styles";
 @import "components/new-link-styles";
+
+.app-width-container--wide {
+  @include govuk-width-container(2400px);
+}
+
+.scrollable{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+
+/*
+    thead tr th:first-child,
+    tbody tr th:first-child {
+     background: white;
+     z-index: 100;
+     top: auto;
+     left: 0.5;
+     position: absolute;
+     width: 6em;
+    }
+    */
+
+
+}
+
+
+.govuk-button--white{
+  background-color: govuk-colour("white");
+  box-shadow: 0 2px 0 rgba(11,12,12, 0.4);
+  color: govuk-colour("black");
+
+  &:hover {
+    background-color: govuk-tint(govuk-colour("mid-grey"), 90%);
+    color: govuk-colour("black");
+  }
+}
+
+.govuk-button--white-on-blue{
+  background-color: govuk-colour("white");
+  box-shadow: 0 2px 0 rgba(11,12,12, 0.4);
+  color: govuk-colour("blue");
+
+  &:hover {
+    background-color: govuk-tint(govuk-colour("blue"), 90%);
+    color: govuk-colour("blue");
+  }
+}
+
+.govuk-button--bordered{
+  background: govuk-colour("white");
+  border: 2px solid #002d18;
+  color: #002d18;
+
+  &:hover {
+    background-color: govuk-tint(govuk-colour("mid-grey"), 90%);
+    color: #002d18;
+  }
+}
+
+.govuk-button--grey-bordered{
+  background: govuk-colour("light-grey");
+  border: 2px solid #505a5f;
+  box-shadow: 0 2px #505a5f;
+  color: #0b0c0c;
+
+  &:hover {
+    background-color: govuk-tint(govuk-colour("mid-grey"), 90%);
+    color: #002d18;
+  }
+}
+
+.govuk-button--blue-bordered{
+  background: govuk-colour("white");
+  border: 2px solid #003078;
+  box-shadow: 0 2px #003078;
+  color: #003078;
+
+  &:hover {
+    background-color: govuk-tint(govuk-colour("blue"), 90%);
+    color: #003078;
+  }
+}
+
+.govuk-button--white-bordered{
+  background: govuk-colour("white");
+  border: 2px solid #505a5f;
+  color: #0b0c0c;
+  box-shadow: 0 2px #505a5f;
+
+  &:hover {
+    background-color: govuk-tint(govuk-colour("mid-grey"), 90%);
+    color: #002d18;
+  }
+}
+
+.on-blue{
+  border-color: #003078;
+  box-shadow: 0 2px #003078;
+  color: #1d70b8;
+}
+
+.govuk-button--secondary-2{
+  background: govuk-colour("white");
+  border: 2px solid #b1b4b6;
+  color: #0b0c0c;
+  box-shadow: 0 2px #b1b4b6;
+
+  &:hover {
+    background-color: govuk-tint(govuk-colour("mid-grey"), 90%);
+    color: #002d18;
+  }
+}
+
+.govuk-button--secondary.same-bevel{
+  box-shadow: 0 4px 0 #929191;
+}
+
+.same-bevel{
+  box-shadow: 0 4px 0 #002d18;
+  padding: 8px 10px 5px;
+}
+
+.on-blue.same-bevel{
+  box-shadow: 0 2px 0 #003078;
+}
+
+
+.bordered-primary{
+  border: 2px solid #002d18;
+}
+
+
+.buttony-link{
+  display: inline-block;
+  padding: 10px 10px 7px;
+}
