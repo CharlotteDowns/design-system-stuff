@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Cookie settings</h1>
+
+      <form class="form" action="/url/of/next/page" method="post">
+
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="example-hint">
+              <legend class="govuk-fieldset__legend">
+                Do you want to accept functional cookies?
+              </legend>
+
+              <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="example" name="example" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="example">
+                    Yes
+                  </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="example-2" name="example" type="radio" value="no" checked>
+                      <label class="govuk-label govuk-radios__label" for="example-2">
+                    No
+                  </label>
+                    </div>
+              </div>
+                
+            <legend class="govuk-fieldset__legend govuk-!-padding-top-6">
+                Do you want to accept analytics cookies?
+              </legend>
+
+              <div class="govuk-radios govuk-radios--inline">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="example" name="example" type="radio" value="yes">
+                      <label class="govuk-label govuk-radios__label" for="example">
+                    Yes
+                  </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="example-2" name="example" type="radio" value="no" checked>
+                      <label class="govuk-label govuk-radios__label" for="example-2">
+                    No
+                  </label>
+                    </div>
+              </div>
+
+            </fieldset>
+            </div>
+          
+        
+
+        <button class="govuk-button" data-module="govuk-button">Save cookie settings</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
